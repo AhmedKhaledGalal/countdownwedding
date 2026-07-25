@@ -1,120 +1,341 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-body {
-    margin: 0;
-    background: transparent;
-    color: #000000;
-    font-family: Georgia, serif;
-    text-align: center;
-}
+<title>Ahmed & Shorok | Wedding Invitation</title>
 
-.title {
-    font-size: 18px;
-    letter-spacing: 4px;
-    margin-bottom: 20px;
-}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-.countdown {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-}
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
 
-.box {
-    min-width: 70px;
-}
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
 
-.number {
-    font-size: 42px;
-    font-weight: bold;
-}
+<link rel="stylesheet"
+href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
 
-.label {
-    font-size: 10px;
-    letter-spacing: 2px;
-    margin-top: 5px;
-}
+<link rel="stylesheet" href="style.css">
 
-@media (max-width: 500px) {
-    .countdown {
-        gap: 10px;
-    }
-
-    .box {
-        min-width: 60px;
-    }
-
-    .number {
-        font-size: 28px;
-    }
-}
-</style>
 </head>
 
 <body>
 
-<div class="title">COUNTDOWN TO OUR WEDDING</div>
+<!-- Loading -->
 
-<div class="countdown">
+<div id="loader">
 
-    <div class="box">
-        <div class="number" id="days">00</div>
-        <div class="label">DAYS</div>
-    </div>
+<h1>A & S</h1>
 
-    <div class="box">
-        <div class="number" id="hours">00</div>
-        <div class="label">HOURS</div>
-    </div>
-
-    <div class="box">
-        <div class="number" id="minutes">00</div>
-        <div class="label">MINUTES</div>
-    </div>
-
-    <div class="box">
-        <div class="number" id="seconds">00</div>
-        <div class="label">SECONDS</div>
-    </div>
+<p>Loading...</p>
 
 </div>
 
+<!-- Navigation -->
+
+<nav>
+
+<div class="logo">
+
+A<span>&</span>S
+
+</div>
+
+<div class="menu">
+
+<a href="#story">Story</a>
+
+<a href="#details">Details</a>
+
+<a href="#countdown">Countdown</a>
+
+<a href="#location">Location</a>
+
+<a href="#gallery">Gallery</a>
+
+</div>
+
+</nav>
+
+<!-- Hero -->
+
+<section class="hero">
+
+<div class="overlay"></div>
+
+<img src="assets/hero.jpg" class="hero-image">
+
+<div class="hero-content">
+
+<h3>Together with their families</h3>
+
+<h1>
+
+Ahmed
+
+<span>&</span>
+
+Shorok
+
+</h1>
+
+<p>
+
+Invite you to celebrate
+
+their wedding day
+
+</p>
+
+<div class="hero-date">
+
+14 August 2026
+
+</div>
+
+<div class="hero-time">
+
+8:00 PM
+
+</div>
+
+<div class="hero-location">
+
+<i class="fa-solid fa-location-dot"></i>
+
+Al-Madjid Al-Gamea
+
+Madinaty
+
+</div>
+
+<a href="#story" class="scroll-btn">
+
+Scroll Down
+
+<i class="fa-solid fa-angle-down"></i>
+
+</a>
+
+</div>
+
+</section>
+
+<!-- Story -->
+
+<section id="story">
+
+<h2 data-aos="fade-up">
+
+Our Story
+
+</h2>
+
+<p data-aos="fade-up">
+
+Our love story began with two hearts that found their way to each other and grew stronger with every moment we shared.
+
+</p>
+
+<p data-aos="fade-up">
+
+Through every chapter, our journey led us to a beautiful and happy ending — one we had always dreamed of.
+
+</p>
+
+<p data-aos="fade-up">
+
+But this is not the end of our story; it is the beginning of a new life, a new journey, and countless beautiful memories together.
+
+</p>
+
+</section>
+
+<!-- Details -->
+
+<section id="details">
+
+<h2>The Details</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-regular fa-calendar"></i>
+
+<h3>Date</h3>
+
+<p>14 August 2026</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-regular fa-clock"></i>
+
+<h3>Time</h3>
+
+<p>8:00 PM</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-location-dot"></i>
+
+<h3>Venue</h3>
+
+<p>
+
+Al-Madjid Al-Gamea
+
+<br>
+
+Madinaty
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Countdown -->
+
+<section id="countdown">
+
+<h2>Countdown To Our Day</h2>
+
+<div class="countdown">
+
+<div>
+
+<h1 id="days">00</h1>
+
+<span>Days</span>
+
+</div>
+
+<div>
+
+<h1 id="hours">00</h1>
+
+<span>Hours</span>
+
+</div>
+
+<div>
+
+<h1 id="minutes">00</h1>
+
+<span>Minutes</span>
+
+</div>
+
+<div>
+
+<h1 id="seconds">00</h1>
+
+<span>Seconds</span>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Location -->
+
+<section id="location">
+
+<h2>Venue</h2>
+
+<p>
+
+Al-Madjid Al-Gamea
+
+<br>
+
+Madinaty
+
+</p>
+
+<a
+
+class="location-btn"
+
+target="_blank"
+
+href="https://maps.app.goo.gl/mqVQstKzZYkT4JGJ8">
+
+Open Google Maps
+
+</a>
+
+</section>
+
+<!-- Gallery -->
+
+<section id="gallery">
+
+<h2>Gallery</h2>
+
+<div class="gallery">
+
+<img src="assets/hero.jpg">
+
+</div>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+<h2>
+
+We can't wait to celebrate with you
+
+</h2>
+
+<p>
+
+Thank you for being part of our journey.
+
+</p>
+
+<h3>
+
+Ahmed
+
+<span>♡</span>
+
+Shorok
+
+</h3>
+
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
 <script>
 
-const weddingDate = new Date("August 14, 2026 20:00:00").getTime();
+AOS.init({
 
-function countdown() {
+duration:1000,
 
-    const now = new Date().getTime();
-    const distance = weddingDate - now;
+once:true
 
-    if (distance <= 0) {
-        document.getElementById("days").innerHTML = "00";
-        document.getElementById("hours").innerHTML = "00";
-        document.getElementById("minutes").innerHTML = "00";
-        document.getElementById("seconds").innerHTML = "00";
-        return;
-    }
-
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
-    const minutes = Math.floor((distance / (1000 * 60)) % 60);
-    const seconds = Math.floor((distance / 1000) % 60);
-
-    document.getElementById("days").innerHTML = days;
-    document.getElementById("hours").innerHTML = hours;
-    document.getElementById("minutes").innerHTML = minutes;
-    document.getElementById("seconds").innerHTML = seconds;
-}
-
-countdown();
-setInterval(countdown, 1000);
+});
 
 </script>
 
+<script src="script.js"></script>
+
 </body>
+
 </html>
