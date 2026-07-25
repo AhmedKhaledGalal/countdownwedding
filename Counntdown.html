@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    margin: 0;
+    background: transparent;
+    color: #000000;
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+.title {
+    font-size: 18px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.box {
+    min-width: 70px;
+}
+
+.number {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.label {
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+
+@media (max-width: 500px) {
+    .countdown {
+        gap: 10px;
+    }
+
+    .box {
+        min-width: 60px;
+    }
+
+    .number {
+        font-size: 28px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="title">COUNTDOWN TO OUR WEDDING</div>
+
+<div class="countdown">
+
+    <div class="box">
+        <div class="number" id="days">00</div>
+        <div class="label">DAYS</div>
+    </div>
+
+    <div class="box">
+        <div class="number" id="hours">00</div>
+        <div class="label">HOURS</div>
+    </div>
+
+    <div class="box">
+        <div class="number" id="minutes">00</div>
+        <div class="label">MINUTES</div>
+    </div>
+
+    <div class="box">
+        <div class="number" id="seconds">00</div>
+        <div class="label">SECONDS</div>
+    </div>
+
+</div>
+
+<script>
+
+const weddingDate = new Date("August 14, 2026 20:00:00").getTime();
+
+function countdown() {
+
+    const now = new Date().getTime();
+    const distance = weddingDate - now;
+
+    if (distance <= 0) {
+        document.getElementById("days").innerHTML = "00";
+        document.getElementById("hours").innerHTML = "00";
+        document.getElementById("minutes").innerHTML = "00";
+        document.getElementById("seconds").innerHTML = "00";
+        return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((distance / (1000 * 60)) % 60);
+    const seconds = Math.floor((distance / 1000) % 60);
+
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
+}
+
+countdown();
+setInterval(countdown, 1000);
+
+</script>
+
+</body>
+</html>
