@@ -1,13 +1,748 @@
-<!DOCTYPE html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
-<title>Ahmed & Shorok</title><link rel='stylesheet' href='style.css'></head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ahmed & Shorok | Wedding Invitation</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- AOS -->
+    <link rel="stylesheet"
+        href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
 <body>
-<header class='hero'><div class='overlay'></div><img src='assets/hero.jpg'><div class='content'>
-<h3>Together with their families</h3><h1>Ahmed <span>&</span> Shorok</h1>
-<p>Invite you to celebrate their wedding</p><h2>14 August 2026</h2><p>8:00 PM</p>
-<p>Al‑Madjid Al‑Gamea, Madinaty</p><a class='btn' target='_blank' href='https://maps.app.goo.gl/mqVQstKzZYkT4JGJ8?g_st=ac'>Open Google Maps</a>
-</div></header>
-<section><h2>Our Story</h2><p>Our love story began with two hearts that found their way to each other and grew stronger with every moment we shared.</p>
-<p>Through every chapter, our journey led us to a beautiful and happy ending — one we had always dreamed of.</p>
-<p>But this is not the end of our story; it is the beginning of a new life, a new journey, and countless beautiful memories together.</p></section>
-<section><h2>Countdown</h2><div id='count'></div></section>
-<script src='script.js'></script></body></html>
+
+
+    <!-- =========================
+         LOADING SCREEN
+    ========================== -->
+
+    <div id="loader">
+
+        <div class="loader-content">
+
+            <div class="loader-monogram">
+                A <span>&</span> S
+            </div>
+
+            <div class="loader-line"></div>
+
+            <p>Loading our story...</p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            A <span>&</span> S
+        </div>
+
+        <div class="menu">
+
+            <a href="#home">Home</a>
+
+            <a href="#story">Our Story</a>
+
+            <a href="#details">Details</a>
+
+            <a href="#countdown">Countdown</a>
+
+            <a href="#location">Venue</a>
+
+            <a href="#gallery">Gallery</a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =========================
+         PAGE 1 — HERO
+    ========================== -->
+
+    <section id="home" class="hero">
+
+        <!-- Background image -->
+
+        <img
+            src="assets/hero.jpg"
+            alt="Ahmed and Shorok"
+            class="hero-image">
+
+
+        <!-- Dark overlay -->
+
+        <div class="hero-overlay"></div>
+
+
+        <!-- Gold particles -->
+
+        <div class="gold-particles"></div>
+
+
+        <!-- Hero content -->
+
+        <div class="hero-content">
+
+
+            <div
+                class="hero-intro"
+                data-aos="fade-down">
+
+                Together with their families
+
+            </div>
+
+
+            <h1
+                class="couple-names"
+                data-aos="zoom-in"
+                data-aos-delay="300">
+
+                Ahmed
+
+                <span>&</span>
+
+                Shorok
+
+            </h1>
+
+
+            <!-- Divider -->
+
+            <div
+                class="gold-divider"
+                data-aos="fade-up"
+                data-aos-delay="500">
+
+                <span></span>
+
+                <i class="fa-solid fa-heart"></i>
+
+                <span></span>
+
+            </div>
+
+
+            <!-- DATE ONLY -->
+
+            <div
+                class="wedding-date"
+                data-aos="fade-up"
+                data-aos-delay="700">
+
+                14 August 2026
+
+            </div>
+
+
+            <!-- Scroll -->
+
+            <a
+                href="#story"
+                class="discover-btn"
+                data-aos="fade-up"
+                data-aos-delay="1000">
+
+                <span>Discover Our Story</span>
+
+                <i class="fa-solid fa-angle-down"></i>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         PAGE 2 START
+    ========================== -->
+
+
+    <main id="main-content">
+
+
+        <!-- =========================
+             OUR STORY
+        ========================== -->
+
+        <section
+            id="story"
+            class="story section">
+
+            <div class="section-container">
+
+
+                <div
+                    class="section-heading"
+                    data-aos="fade-up">
+
+                    <span class="small-title">
+                        OUR JOURNEY
+                    </span>
+
+                    <h2>
+                        Our Story
+                    </h2>
+
+                    <div class="gold-divider">
+
+                        <span></span>
+
+                        <i class="fa-solid fa-heart"></i>
+
+                        <span></span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="story-content">
+
+
+                    <p data-aos="fade-up">
+
+                        Our love story began with two hearts
+                        that found their way to each other
+                        and grew stronger with every moment
+                        we shared.
+
+                    </p>
+
+
+                    <p data-aos="fade-up">
+
+                        Through every chapter, our journey
+                        led us to a beautiful and happy ending
+                        — one we had always dreamed of.
+
+                    </p>
+
+
+                    <p data-aos="fade-up">
+
+                        But this is not the end of our story;
+                        it is the beginning of a new life,
+                        a new journey, and countless beautiful
+                        memories together.
+
+                    </p>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             WEDDING DETAILS
+        ========================== -->
+
+        <section
+            id="details"
+            class="details section">
+
+
+            <div class="section-container">
+
+
+                <div
+                    class="section-heading"
+                    data-aos="fade-up">
+
+                    <span class="small-title">
+                        THE SPECIAL DAY
+                    </span>
+
+                    <h2>
+                        Wedding Details
+                    </h2>
+
+                    <div class="gold-divider">
+
+                        <span></span>
+
+                        <i class="fa-solid fa-heart"></i>
+
+                        <span></span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="details-grid">
+
+
+                    <!-- DATE -->
+
+                    <div
+                        class="detail-card"
+                        data-aos="fade-up">
+
+                        <div class="detail-icon">
+
+                            <i class="fa-regular fa-calendar"></i>
+
+                        </div>
+
+                        <span>
+                            DATE
+                        </span>
+
+                        <h3>
+                            14 August 2026
+                        </h3>
+
+                    </div>
+
+
+
+                    <!-- TIME -->
+
+                    <div
+                        class="detail-card"
+                        data-aos="fade-up"
+                        data-aos-delay="150">
+
+                        <div class="detail-icon">
+
+                            <i class="fa-regular fa-clock"></i>
+
+                        </div>
+
+                        <span>
+                            TIME
+                        </span>
+
+                        <h3>
+                            8:00 PM
+                        </h3>
+
+                    </div>
+
+
+
+                    <!-- VENUE -->
+
+                    <div
+                        class="detail-card"
+                        data-aos="fade-up"
+                        data-aos-delay="300">
+
+                        <div class="detail-icon">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                        </div>
+
+                        <span>
+                            VENUE
+                        </span>
+
+                        <h3>
+                            Al-Madjid Al-Gamea
+                        </h3>
+
+                        <p>
+                            Madinaty
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             COUNTDOWN
+        ========================== -->
+
+        <section
+            id="countdown"
+            class="countdown-section section">
+
+
+            <div class="section-container">
+
+
+                <div
+                    class="section-heading"
+                    data-aos="fade-up">
+
+                    <span class="small-title">
+                        THE BIG DAY
+                    </span>
+
+                    <h2>
+                        Countdown To Our Day
+                    </h2>
+
+                    <div class="gold-divider">
+
+                        <span></span>
+
+                        <i class="fa-solid fa-heart"></i>
+
+                        <span></span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div
+                    class="countdown"
+                    data-aos="zoom-in">
+
+
+                    <div class="count-box">
+
+                        <strong id="days">
+                            00
+                        </strong>
+
+                        <span>
+                            DAYS
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="count-box">
+
+                        <strong id="hours">
+                            00
+                        </strong>
+
+                        <span>
+                            HOURS
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="count-box">
+
+                        <strong id="minutes">
+                            00
+                        </strong>
+
+                        <span>
+                            MINUTES
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="count-box">
+
+                        <strong id="seconds">
+                            00
+                        </strong>
+
+                        <span>
+                            SECONDS
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             LOCATION
+        ========================== -->
+
+        <section
+            id="location"
+            class="location section">
+
+
+            <div class="section-container">
+
+
+                <div
+                    class="section-heading"
+                    data-aos="fade-up">
+
+                    <span class="small-title">
+                        JOIN US
+                    </span>
+
+                    <h2>
+                        The Venue
+                    </h2>
+
+                    <div class="gold-divider">
+
+                        <span></span>
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <span></span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div
+                    class="venue-content"
+                    data-aos="fade-up">
+
+
+                    <div class="venue-info">
+
+
+                        <h3>
+                            Al-Madjid Al-Gamea
+                        </h3>
+
+                        <p>
+                            Madinaty
+                        </p>
+
+
+                        <a
+                            href="https://maps.app.goo.gl/mqVQstKzZYkT4JGJ8?g_st=ac"
+                            target="_blank"
+                            class="location-btn">
+
+                            <i class="fa-solid fa-location-arrow"></i>
+
+                            Open in Google Maps
+
+                        </a>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             GALLERY
+        ========================== -->
+
+        <section
+            id="gallery"
+            class="gallery-section section">
+
+
+            <div class="section-container">
+
+
+                <div
+                    class="section-heading"
+                    data-aos="fade-up">
+
+                    <span class="small-title">
+                        OUR MEMORIES
+                    </span>
+
+                    <h2>
+                        Gallery
+                    </h2>
+
+                    <div class="gold-divider">
+
+                        <span></span>
+
+                        <i class="fa-regular fa-image"></i>
+
+                        <span></span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div
+                    class="gallery"
+                    data-aos="zoom-in">
+
+
+                    <div class="gallery-item">
+
+                        <img
+                            src="assets/hero.jpg"
+                            alt="Ahmed & Shorok">
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             CLOSING
+        ========================== -->
+
+        <section
+            class="closing section">
+
+
+            <div
+                class="closing-content"
+                data-aos="fade-up">
+
+
+                <div class="closing-heart">
+
+                    <i class="fa-regular fa-heart"></i>
+
+                </div>
+
+
+                <h2>
+                    We Can't Wait
+                </h2>
+
+
+                <p>
+                    To celebrate this unforgettable day
+                    with you.
+                </p>
+
+
+                <p>
+                    Thank you for being part of our journey.
+                </p>
+
+
+                <div class="signature">
+
+                    Ahmed
+
+                    <span>♡</span>
+
+                    Shorok
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-monogram">
+
+            A <span>&</span> S
+
+        </div>
+
+
+        <p>
+            With love, Ahmed & Shorok
+        </p>
+
+
+        <small>
+            14 · 08 · 2026
+        </small>
+
+    </footer>
+
+
+
+    <!-- AOS -->
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+
+    <script>
+
+        AOS.init({
+
+            duration: 1000,
+
+            once: true,
+
+            offset: 100
+
+        });
+
+    </script>
+
+
+    <!-- Main JavaScript -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
