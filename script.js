@@ -1,0 +1,1 @@
+const t=new Date('2026-08-14T20:00:00').getTime();setInterval(()=>{let d=t-Date.now();if(d<0)return;let days=Math.floor(d/86400000),h=Math.floor(d%86400000/3600000),m=Math.floor(d%3600000/60000),s=Math.floor(d%60000/1000);document.getElementById('count').textContent=`${days} Days ${h} Hours ${m} Minutes ${s} Seconds`;},1000);
